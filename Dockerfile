@@ -8,4 +8,4 @@ RUN git clone https://github.com/keboola/db-writer.git ./
 RUN git checkout origin/master
 RUN composer install --no-interaction
 
-#ENTRYPOINT php ./run.php --data=/data
+ENTRYPOINT php ./run.php --data=/data
