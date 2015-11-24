@@ -5,7 +5,7 @@ MAINTAINER Miro Cillik <miro@keboola.com>
 # Run extractor
 WORKDIR /home
 RUN git clone https://github.com/keboola/db-writer.git ./
-RUN git checkout origin/master
+RUN git checkout tags/0.0.2
 RUN composer install --no-interaction
 
 ENTRYPOINT php ./run.php --data=/data
