@@ -4,6 +4,7 @@ MAINTAINER Miro Cillik <miro@keboola.com>
 
 # Run extractor
 WORKDIR /home
+RUN echo "memory_limit = -1" >> /etc/php.ini
 RUN git clone https://github.com/keboola/db-writer.git ./
 RUN git checkout tags/0.0.2
 RUN composer install --no-interaction
