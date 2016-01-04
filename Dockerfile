@@ -7,7 +7,7 @@ WORKDIR /home
 ADD freetds.conf /etc/
 RUN echo "memory_limit = -1" >> /etc/php.ini
 RUN git clone https://github.com/keboola/db-writer.git ./
-RUN git checkout tags/0.0.4
+RUN git checkout tags/0.0.5
 RUN composer install --no-interaction
 
 ENTRYPOINT php ./run.php --data=/data
