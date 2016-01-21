@@ -1,5 +1,5 @@
 #VERSION 1.0.0
-FROM keboola/docker-php56-all-db
+FROM quay.io/keboola/docker-php56-all-db
 MAINTAINER Miro Cillik <miro@keboola.com>
 
 # Run extractor
