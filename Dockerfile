@@ -7,7 +7,7 @@ ENV TDSVER=8.0
 WORKDIR /home
 RUN echo "memory_limit = -1" >> /etc/php.ini
 RUN git clone https://github.com/keboola/db-writer.git ./
-RUN git checkout tags/0.0.14
+RUN git checkout tags/0.0.15
 RUN composer install --no-interaction
 
 ENTRYPOINT php ./run.php --data=/data
